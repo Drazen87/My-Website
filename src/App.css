@@ -1,0 +1,33 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 10, 65, 1) 0%, rgba(63, 81, 181, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 10, 65, 1) 0%, rgba(63, 81, 181, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 10, 65, 1) 0%, rgba(63, 81, 181, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 10, 65, 1) 0%, rgba(63, 81, 181, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 3% 25%, rgba(0, 10, 65, 1) 0%, rgba(63, 81, 181, 1) 100%);
+    /*sorgt dafür, dass der Farbverlauf über gesamten Bildschirm geht*/
+    background-attachment: fixed;
+}
+
+.container-main {
+    height: 200px;
+}

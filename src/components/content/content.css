@@ -1,0 +1,40 @@
+.container{
+    max-width: 1800px;
+    flex-basis: 1100px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    color: blueviolet;
+    flex-direction: row;
+    
+    
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.box {
+    /*flex-grow: 1; flex-shrink: 1; flex-basis: 0px;*/
+    flex: 1 1 0px;
+    padding-left: 2rem;
+}
+
+.box-2 {
+    flex: 1 1 0px;
+}
+
+
+.container p {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.container img {
+    position: relative;
+    float: right;
+    height: 600px;
+    width: 800px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
