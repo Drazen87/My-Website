@@ -33,6 +33,7 @@ const Navbar = () => {
                     <p>Rezessionen </p>
                     <p>Team </p>
                     <p>Kontakt </p>
+                    <p>Test</p>
                 </div>
             )}
         </div>    
