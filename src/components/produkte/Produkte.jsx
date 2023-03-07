@@ -2,6 +2,8 @@ import React from 'react';
 import './produkte.css';
 
 import haus1 from '../../assets/hausinnen.jpg';
+import haus2 from '../../assets/bild2.jpg';
+import haus3 from '../../assets/bild3.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/swiper.min.css";
@@ -11,43 +13,34 @@ import { Navigation } from "swiper";
 
 const Produkte = () => {
   return (
-    <div className="flex-container">
-        <div className="box3">
-            <h1>
-            Unsere Produkte
-            </h1>
-        </div>    
         
-        <div className="box4">
+        
         <>
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide>
-          <div>
-            <img src={haus1} />
 
+        <div className="boxProdukte">
+          <div className="boxInnen1">
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            <SwiperSlide className="boxInnen12" >
+              <div>
+                <img src={haus1} />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <img src={haus2} />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <img src={haus3} />
+              </div>
+            </SwiperSlide>
+            </Swiper>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div>
-                <img src={haus1} />
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div>
-                <img src={haus1} />
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-        </Swiper>
+        </div>
         </>
           
-        </div>
-    </div>    
+    
   )
 }
 

@@ -17,7 +17,6 @@ const Content = () => {
         <button className="scale-up-center button-85" role="button">Jetzt buchen!</button>
       </div>
       <div className="box-2">
-        <img src={haus1} />
       </div>
       
     </div>

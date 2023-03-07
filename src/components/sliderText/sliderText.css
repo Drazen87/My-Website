@@ -1,0 +1,9 @@
+.textImSlider {
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    right: 134px;
+    top: 893px;
+    padding-right: 50px;
+    transition: left 3s ease;
+}

@@ -7,13 +7,15 @@
     align-items: center;
     padding: 2rem 6rem;
     margin-top: 30px;
+    z-index: 1;
+    position: relative;
   }
   .navbarAllgemein p {
     margin: 40px;
     letter-spacing: 2px;
 
     font-size:large;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   .test {
