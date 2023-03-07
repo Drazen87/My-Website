@@ -6,11 +6,15 @@ const Content = () => {
   return (
     <div className="container">
       <div className="box">
-        <h1>Willkommen bei <br></br>boho-casa</h1>
-        <p>Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum 
-          Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum 
-          Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum 
+        <h1>Willkommen</h1>
+        <h2>bei test-test</h2>
+        <p>Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum <br></br>
+        Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum <br></br>
+        Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum <br></br>
+        Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum <br></br>
+        Lore Ipsum Lore Ipsum Lore Ipsum 
         </p>
+        <button className="scale-up-center button-85" role="button">Jetzt buchen!</button>
       </div>
       <div className="box-2">
         <img src={haus1} />

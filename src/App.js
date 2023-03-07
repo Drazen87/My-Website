@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import { Navbar, Content } from './components';
+import { Navbar, Content, Produkte } from './components';
 import { Header } from './containers';
 
 
@@ -16,6 +16,10 @@ const App = () => (
     <div>
       <Content />
     </div>
+    <div>
+      <Produkte />
+    </div>
   </div>
+  
 );
 export default App;

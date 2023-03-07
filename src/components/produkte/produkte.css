@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1800px;
+}
+
+.box3 {
+    display: flex;
+    flex: 0 1 auto;
+    margin-top: 100px;
+    margin-right: 100px;
+    
+}
+
+.box4 {
+    display: flex;
+    flex: 0 1 auto;
+}
