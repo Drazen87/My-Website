@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './produkte.css';
 
@@ -10,19 +11,27 @@ import "swiper/swiper.min.css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
+ 
 
 const Produkte = () => {
-  return (
-        
-        
-        <>
 
+  const [count, setCount] = React.useState(0);  
+
+  function handleClick() {
+  
+    setCount(count + 1);
+  }
+
+
+  return (     
+        <> 
         <div className="boxProdukte">
           <div className="boxInnen1">
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-            <SwiperSlide className="boxInnen12" >
+            <SwiperSlide className="boxInnen12" onClick={handleClick}>
               <div>
                 <img src={haus1} />
+                <div className="test">{count}</div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
