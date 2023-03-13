@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './produkte.css';
+import { useState } from 'react';
 
 import haus1 from '../../assets/hausinnen.jpg';
 import haus2 from '../../assets/bild2.jpg';
@@ -11,27 +12,50 @@ import "swiper/swiper.min.css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
- 
+
 
 const Produkte = () => {
 
-  const [count, setCount] = React.useState(0);  
+  const listeText =  [
+    "Erster Text",
+    "zweiter Text",
+    "dritter Text"
+]
 
-  function handleClick() {
-  
-    setCount(count + 1);
+  const [zahlerstand, setZahlerstand] = useState(0);
+
+   
+  function vor() {
+    setZahlerstand(zahlerstand + 1)
+    console.log(zahlerstand)
   }
 
+  function back() {
+    setZahlerstand(zahlerstand - 1)
+    console.log(zahlerstand)
+  }
 
-  return (     
+  function richtigerText() {
+    if (zahlerstand === 0) {
+      return listeText[0];
+    } else if (zahlerstand === 1){
+      return listeText[1];
+    } else {
+      return listeText[2];
+    }
+
+  };
+
+
+
+    return (     
         <> 
         <div className="boxProdukte">
           <div className="boxInnen1">
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-            <SwiperSlide className="boxInnen12" onClick={handleClick}>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper" onSlidePrevTransitionStart={() => setZahlerstand(zahlerstand - 1)} onSlideNextTransitionStart={() => setZahlerstand(zahlerstand + 1)}   >
+            <SwiperSlide>
               <div>
                 <img src={haus1} />
-                <div className="test">{count}</div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -46,10 +70,11 @@ const Produkte = () => {
             </SwiperSlide>
             </Swiper>
           </div>
+          <div className="boxInnen2">
+            <div className="testPro">{richtigerText()}</div>
+          </div>
         </div>
-        </>
-          
-    
+        </>   
   )
 }
 
